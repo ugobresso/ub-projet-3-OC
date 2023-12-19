@@ -1,0 +1,15 @@
+header {
+    box-shadow: none;
+
+    .header-back-button {
+        display:inline-block;
+        width: 4rem;
+        position: absolute;
+
+        a {
+            svg {
+                width: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACH,UAAU,EAAE,IAAI;EAEhB,0BAAoB;IAChB,OAAO,EAAC,YAAY;IACpB,KAAK,EAAE,IAAI;IACX,QAAQ,EAAE,QAAQ;IAGd,gCAAI;MACA,KAAK,EAAE,IAAI",
+"sources": ["../../sass/pages/_restaurant.scss"],
+"names": [],
+"file": "restaurants.css"
+}

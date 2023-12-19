@@ -1,0 +1,10 @@
+header {
+  box-shadow: none; }
+  header .header-back-button {
+    display: inline-block;
+    width: 4rem;
+    position: absolute; }
+    header .header-back-button a svg {
+      width: 2rem; }
+
+/*# sourceMappingURL=restaurants.css.map */
