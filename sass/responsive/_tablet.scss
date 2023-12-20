@@ -1,3 +1,82 @@
-main {
-    background-color: red;
+@media (min-width: 820px) {
+
+    header {
+        height: 6rem;
+    }
+
+    main {
+
+        .opening-section {
+            .welcome-part {
+                .welcome-txt {
+                    width: 100%;
+                    gap: 2rem;
+
+                    h1 {
+                        width: 100%;
+                        justify-content: center;
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+
+        .fonctionnement {
+            padding-right: 5rem;
+            padding-left: 5rem;
+
+            .fonctionnement-grid {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+
+                .fonctionnement-card {
+                    width: 33%;
+
+                    h3 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .restaurants-list {
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+            .restaurants-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
+                gap: 3.12rem 6.25rem;
+
+                .restaurants-card {
+                    height: 15rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 4.125rem;
+        align-items: flex-end;
+        gap: 6rem;
+
+        .footer-content {
+            flex-direction: row;
+            right: 10px;
+            bottom: 10px;
+
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
 }

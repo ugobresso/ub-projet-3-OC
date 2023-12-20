@@ -1,15 +1,122 @@
 header {
     box-shadow: none;
 
+    .header-logo-container {
+
+        img {
+            width: 8rem;
+        }
+    }
+
     .header-back-button {
         display:inline-block;
-        width: 4rem;
         position: absolute;
 
         a {
             svg {
-                width: 2rem;
+                width: 1.2rem;
             }
         }
     }
+}
+
+main {
+
+    .intro-picture {
+        display: inline;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .menu {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        z-index:1;
+        background-color: $secondary-background-color;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+        top: -3rem;
+        width: 100%;
+        padding: 2rem 1.1rem 2.5rem 1.06rem;
+        box-sizing: border-box;
+        gap: 2.5rem;
+
+        .menu-title {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                position: relative;
+                font-family: 'shrikhand', sans-serif;
+                font-size: 1.75rem;
+            }
+        }
+
+        .detailed-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            .menu-part {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .menu-subtitle {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+            }
+
+            .menu-card-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .menu-card {
+                    display: flex;
+                    position: relative;
+                    flex-direction: column;
+                    overflow: hidden;
+                    background-color: $background-color;
+                    justify-content: center;
+                    border-radius: 0.94rem;
+                    padding: 0.94rem;
+                    gap: 0.31rem;
+                    box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
+
+                    .checked-selection {
+                        display: flex;
+                        align-items: center;
+
+                        .menu-card-content {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.31rem;
+                            width: 100%;
+
+                            .menu-description {
+                                width: 100%;
+                                transition: width 1.5s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin: 0;
 }

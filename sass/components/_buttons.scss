@@ -18,3 +18,60 @@
     filter: brightness(1.05);
     box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.4);
 }
+
+  
+.header-back-button {
+    display: none;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+  .new-tag {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $secondary-color;
+    color: $secondary-color-darker;
+    padding: 0.44rem 0.60rem 0.38rem 0.56rem;
+}
+
+/** RESTAURANT CARD **/
+
+.select-button {
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    height: 100%;
+    right: -4.2rem;
+    transition: ease 0.7s;
+
+    .price {
+        position: relative;
+        bottom: 2.5rem;
+        right: 2.5rem;
+    }
+}
+
+.trigger {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.trigger:checked + .checked-selection .select-button {
+        right: 0rem;
+        transition: right 0.7s ease;
+    }
+
+.trigger:checked + .checked-selection .menu-description {
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-width 1.3s ease-in-out;
+}
+
