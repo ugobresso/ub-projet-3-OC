@@ -50,7 +50,8 @@ header {
       width: 1.2rem; }
 
 main .intro-picture {
-  display: inline; }
+  display: inline;
+  width: 100%; }
   main .intro-picture img {
     object-fit: cover;
     width: 100%;
@@ -176,7 +177,7 @@ footer {
   opacity: 0; }
 
 .trigger:checked + .checked-selection .select-button {
-  right: 0rem;
+  right: -1px;
   transition: right 0.7s ease; }
 
 .trigger:checked + .checked-selection .menu-description {
@@ -223,5 +224,89 @@ footer {
     flex-direction: row;
     gap: 0.69rem;
     align-items: center; }
+
+@media (min-width: 1440px) {
+  main .fonctionnement {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem; }
+  main .restaurants-list {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem; }
+
+  footer {
+    height: 4.125rem;
+    padding: 3rem; }
+
+  /*** RESTAURANTS ***/
+  main .menu {
+    display: flex;
+    margin-left: 20rem;
+    padding: 3.19rem 13.13rem 2.5rem 13.13rem; } }
+@media (min-width: 820px) {
+  header {
+    height: 6rem; }
+
+  main .opening-section .welcome-part .welcome-txt {
+    width: 100%;
+    gap: 2rem; }
+    main .opening-section .welcome-part .welcome-txt h1 {
+      width: 100%;
+      justify-content: center;
+      font-size: 2.5rem; }
+    main .opening-section .welcome-part .welcome-txt p {
+      font-size: 1.125rem; }
+  main .fonctionnement {
+    padding-right: 5rem;
+    padding-left: 5rem; }
+    main .fonctionnement .fonctionnement-grid {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center; }
+      main .fonctionnement .fonctionnement-grid .fonctionnement-card {
+        width: 33%; }
+        main .fonctionnement .fonctionnement-grid .fonctionnement-card h3 {
+          text-align: center; }
+  main .restaurants-list {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+    main .restaurants-list .restaurants-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      gap: 3.12rem 6.25rem; }
+      main .restaurants-list .restaurants-grid .restaurants-card {
+        height: 15rem; }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 4.125rem;
+    align-items: flex-end;
+    gap: 6rem; }
+    footer .footer-content {
+      flex-direction: row;
+      right: 10px;
+      bottom: 10px; }
+      footer .footer-content a {
+        font-size: 1rem; }
+
+  /*** RESTAURANTS ***/
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .intro-picture img {
+      height: 25rem; }
+    main .menu {
+      display: flex;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%; }
+      main .menu .menu-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem; } }
 
 /*# sourceMappingURL=restaurants.css.map */

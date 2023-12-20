@@ -104,7 +104,7 @@ h4 {
   opacity: 0; }
 
 .trigger:checked + .checked-selection .select-button {
-  right: 0rem;
+  right: -1px;
   transition: right 0.7s ease; }
 
 .trigger:checked + .checked-selection .menu-description {
@@ -305,7 +305,25 @@ main .restaurants-list {
       right: 10px;
       bottom: 10px; }
       footer .footer-content a {
-        font-size: 1rem; } }
+        font-size: 1rem; }
+
+  /*** RESTAURANTS ***/
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main .intro-picture img {
+      height: 25rem; }
+    main .menu {
+      display: flex;
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%; }
+      main .menu .menu-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem; } }
 @media (min-width: 1440px) {
   main .fonctionnement {
     padding-left: 11.25rem;
@@ -316,6 +334,12 @@ main .restaurants-list {
 
   footer {
     height: 4.125rem;
-    padding: 3rem; } }
+    padding: 3rem; }
+
+  /*** RESTAURANTS ***/
+  main .menu {
+    display: flex;
+    margin-left: 20rem;
+    padding: 3.19rem 13.13rem 2.5rem 13.13rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -79,4 +79,34 @@
             }
         }
     }
+
+    /*** RESTAURANTS ***/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .intro-picture {
+            
+            img {
+                height: 25rem;
+            }
+        }
+
+        .menu {
+            display: flex;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+
+            .menu-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+    }
+
 }

@@ -63,7 +63,7 @@
 }
 
 .trigger:checked + .checked-selection .select-button {
-        right: 0rem;
+        right: -1px;
         transition: right 0.7s ease;
     }
 
