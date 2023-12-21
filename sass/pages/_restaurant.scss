@@ -86,6 +86,7 @@ main {
 
                 .menu-card {
                     display: flex;
+                    z-index: 1;
                     position: relative;
                     flex-direction: column;
                     overflow: hidden;
@@ -114,6 +115,12 @@ main {
                     }
                 }
             }
+        }
+
+        .explore-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
