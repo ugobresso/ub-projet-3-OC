@@ -8,5 +8,8 @@
     "sass-restaurants": "sass --watch ./sass/restaurants.scss:./assets/css/restaurants.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
 }
