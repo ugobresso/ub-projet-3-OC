@@ -13,7 +13,7 @@ npm -v
 
 ## Utilisation
 
-Projet HTML et CSS uniquement, avec utilisation SCSS divisé par architecture 7:1.
+Projet HTML et CSS uniquement, avec utilisation SCSS (version 1.70.0) divisé par architecture 7:1.
 
 
 
