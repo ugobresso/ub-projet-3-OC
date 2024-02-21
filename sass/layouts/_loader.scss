@@ -1,5 +1,6 @@
 .loader{
     font-size: 48px;
+    position: fixed;
     background-color: $secondary-background-color;
     width: 100%;
     height: 100%;
@@ -9,9 +10,8 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    position: absolute;
     font-family: 'shrikhand', sans-serif;
-    animation: 3s loader-animation forwards;
+    animation: 0.1s loader-animation forwards;
   }
 
   .loader:after{
@@ -40,9 +40,11 @@
 
     99% {
         opacity: 1;
+        z-index: 10;
     }
 
     100% {
         opacity: 0;
+        z-index: 0;
     }
   }

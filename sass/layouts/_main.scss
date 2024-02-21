@@ -135,16 +135,27 @@ main {
                     .heart, .clicked-heart {
                         position: absolute;
                         right: 1.56rem;
-                        bottom: 2.06rem;
+                        bottom: 1.5rem;
+                        line-height: 1.5;
                     }
 
                     .heart {
-                        z-index: 1;
-                        fill:white;
+                        opacity: 1;
+                    }
+
+                    .clicked-heart {
+                        opacity: 0;
+                        background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($primary-color-gradient));
+	                    -webkit-background-clip: text;
+	                    -webkit-text-fill-color: transparent;
                     }
 
                     .heart:hover {
-                        opacity:0;
+                        opacity: 0;
+                    }
+
+                    .clicked-heart:hover {
+                        opacity: 1;
                     }
 
                 }

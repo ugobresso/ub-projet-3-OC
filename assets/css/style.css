@@ -167,6 +167,7 @@ footer {
   font-weight: 500;
   padding: 2rem;
   gap: 1.15rem;
+  position: relative;
 }
 footer .img-footer {
   display: flex;
@@ -300,18 +301,28 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content {
 main .restaurants-list .restaurants-grid .restaurants-card .card-content .heart, main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicked-heart {
   position: absolute;
   right: 1.56rem;
-  bottom: 2.06rem;
+  bottom: 1.5rem;
+  line-height: 1.5;
 }
 main .restaurants-list .restaurants-grid .restaurants-card .card-content .heart {
-  z-index: 1;
-  fill: white;
+  opacity: 1;
+}
+main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicked-heart {
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main .restaurants-list .restaurants-grid .restaurants-card .card-content .heart:hover {
   opacity: 0;
 }
+main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicked-heart:hover {
+  opacity: 1;
+}
 
 .loader {
   font-size: 48px;
+  position: fixed;
   background-color: #F6F6F6;
   width: 100%;
   height: 100%;
@@ -321,9 +332,8 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .heart:
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  position: absolute;
   font-family: "shrikhand", sans-serif;
-  animation: 3s loader-animation forwards;
+  animation: 0.1s loader-animation forwards;
 }
 
 .loader:after {
@@ -354,9 +364,11 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .heart:
 @keyframes loader-animation {
   99% {
     opacity: 1;
+    z-index: 10;
   }
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 @media (min-width: 820px) {
