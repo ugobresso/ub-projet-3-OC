@@ -60,6 +60,11 @@ main {
                 font-family: 'shrikhand', sans-serif;
                 font-size: 1.75rem;
             }
+
+            i {
+                opacity: 10;
+                z-index: 1000000;
+            }
         }
 
         .detailed-menu {
