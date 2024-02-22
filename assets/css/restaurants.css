@@ -119,13 +119,13 @@ main .menu .detailed-menu .menu-part {
   gap: 0.75rem;
 }
 main .menu .detailed-menu .entrees {
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
 }
 main .menu .detailed-menu .plats {
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 main .menu .detailed-menu .desserts {
-  animation-delay: 1.5s;
+  animation-delay: 2.2s;
 }
 @keyframes fade-in {
   to {
@@ -181,6 +181,7 @@ footer {
 }
 
 .main-btn {
+  z-index: 10;
   display: flex;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   border-radius: 1.5625rem;
@@ -301,6 +302,7 @@ footer a {
   flex-direction: row;
   gap: 0.69rem;
   align-items: center;
+  color: white;
 }
 
 @media (min-width: 1440px) {

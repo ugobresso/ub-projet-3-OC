@@ -145,7 +145,7 @@ main {
                     .clicked-heart {
                         opacity: 0;
                         background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($primary-color-gradient));
-	                    -webkit-background-clip: text;
+	                    background-clip: text;
 	                    -webkit-text-fill-color: transparent;
                     }
 
