@@ -52,16 +52,18 @@ main {
             display: flex;
             position: relative;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            gap: 25px;
 
             h1 {
-                position: relative;
+                justify-content: center;
                 font-family: 'shrikhand', sans-serif;
                 font-size: 1.75rem;
             }
 
             i {
+                position: relative;
                 opacity: 10;
                 z-index: 1000000;
             }
