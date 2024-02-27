@@ -139,6 +139,14 @@ h4 {
   transition: max-width 1.3s ease-in-out;
 }
 
+.trigger:checked + .checked-selection h3 {
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-width 1.3s ease-in-out;
+}
+
 header {
   z-index: 1;
   display: flex;
@@ -177,7 +185,7 @@ footer .footer-content {
   display: flex;
   flex-direction: column;
   padding-inline-start: 0;
-  gap: 0.44rem;
+  gap: 1rem;
 }
 footer a {
   display: flex;
@@ -185,6 +193,7 @@ footer a {
   gap: 0.69rem;
   align-items: center;
   color: white;
+  text-decoration: none;
 }
 
 main .opening-section .localisation-info {
@@ -355,7 +364,7 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicke
   bottom: -50px;
   background: linear-gradient(#9356DC 100%, transparent 0) no-repeat;
   background-size: 0% auto;
-  animation: 3s lineGrow linear infinite;
+  animation: 2.5s lineGrow linear infinite;
 }
 
 @keyframes lineGrow {
@@ -447,6 +456,8 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicke
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   main .menu .menu-title {
     display: flex;
@@ -456,6 +467,9 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicke
   }
 }
 @media (min-width: 1440px) {
+  main {
+    /*** RESTAURANTS ***/
+  }
   main .fonctionnement {
     padding-left: 11.25rem;
     padding-right: 11.25rem;
@@ -464,15 +478,16 @@ main .restaurants-list .restaurants-grid .restaurants-card .card-content .clicke
     padding-left: 11.25rem;
     padding-right: 11.25rem;
   }
+  main .menu {
+    justify-content: center;
+    align-items: center;
+  }
+  main .menu .detailed-menu {
+    width: 75%;
+  }
   footer {
     height: 4.125rem;
     padding: 3rem;
-  }
-  /*** RESTAURANTS ***/
-  main .menu {
-    display: flex;
-    margin-left: 20rem;
-    padding: 3.19rem 13.13rem 2.5rem 13.13rem;
   }
 }
 

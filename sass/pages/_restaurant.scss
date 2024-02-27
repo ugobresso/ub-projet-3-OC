@@ -72,6 +72,8 @@ main {
         .detailed-menu {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 2.5rem;
 
             .menu-part {
@@ -80,6 +82,7 @@ main {
                 animation: fade-in 0.5s ease-out forwards;
                 display: flex;
                 flex-direction: column;
+                width: 100%;
                 gap: 0.75rem;
             }
 

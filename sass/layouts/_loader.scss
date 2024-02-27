@@ -31,7 +31,7 @@
     bottom: -50px;
     background: linear-gradient($primary-color 100%, transparent 0) no-repeat;
     background-size: 0% auto;
-    animation: 3s lineGrow linear infinite;
+    animation: 2.5s lineGrow linear infinite;
   }
 
   @keyframes lineGrow {to {  background-size: 100% auto}}
